@@ -1,0 +1,19 @@
+<div *ngIf="!selectedMovie; else selectCard" class="innerContainer">
+    <div *ngIf="listMovie; else otherContent" class="containerForListMovies">
+        <div *ngFor="let item of listMovie">
+            <app-movie-card [cardMovie]="item" (click)="getDitail(item)"></app-movie-card>
+        </div>
+    </div>
+    <ng-template #otherContent>
+        <div>
+            <p class="notFoundText">Nothing found on your request</p>
+        </div>
+    </ng-template>
+</div>
+
+<ng-template #selectCard>
+    <div>
+        <app-movie-detail [movie]="selectedMovie"></app-movie-detail>
+        <button style="margin: 2%;" type="button" class="btn btn-primary" (click)="goBack()">go Back</button>
+    </div>
+</ng-template>

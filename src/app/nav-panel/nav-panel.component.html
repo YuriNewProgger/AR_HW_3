@@ -1,0 +1,10 @@
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand">Database with movies. Search by title. Includes description and year of release.</a>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search by movie title" aria-label="Search" #titleMovie>
+        <button class="btn btn-outline-success" type="button" (click)="searchMovie(titleMovie.value)">Search</button>
+      </form>
+    </div>
+</nav>
+

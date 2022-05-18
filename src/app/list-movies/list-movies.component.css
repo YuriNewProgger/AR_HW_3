@@ -1,0 +1,12 @@
+.innerContainer{
+    display: flex;
+    justify-content: center;
+}
+
+
+.containerForListMovies{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+}

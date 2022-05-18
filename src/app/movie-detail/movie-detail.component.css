@@ -1,0 +1,9 @@
+.detail{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.cardItems{
+    align-items: center;
+}
